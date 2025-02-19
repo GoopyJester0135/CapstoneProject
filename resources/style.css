@@ -51,7 +51,7 @@ html {
     color: lightgray;
 }
 
-.button:hover{
+#greybox .right .button:hover{
     background-color: grey;
 }
 
