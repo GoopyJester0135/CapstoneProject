@@ -1,0 +1,201 @@
+html {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#banner {
+    height: 32px;
+    width: auto;
+    margin: 0px 24px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.logo {}
+
+.navagation {}
+
+.navagation a {
+    padding: 8px;
+}
+
+#greybox{
+    display: flex;
+    flex-direction: row;
+    background-color: lightgray;
+}
+
+#greybox .left{
+    padding: 32px 24px;
+    width: 60%;
+}
+#greybox .left img{
+    width: 100%;
+}
+
+#greybox .right{
+    margin: auto 0px;
+    color: rgb(74, 74, 74);
+    width: 20%;
+}
+#greybox .right div{
+    margin: auto 0px;
+    text-align: left;
+}
+
+#greybox .right .button{
+    text-align: center;
+    padding: 8px auto;
+    background-color: rgb(74, 74, 74);
+    color: white;
+}
+
+
+
+
+
+
+#information {
+    display: flex;
+    flex-direction: row;
+}
+
+#information .left {
+    margin: 32px 12px;
+    width: 60%;
+}
+
+#information .left img{
+    width: 100%;
+}
+#informatin .left div{
+    padding: 32px 0px;
+}
+
+#information .right {
+    margin: 32px 12px;
+    width: 40%;
+}
+
+#information .right .box{
+    display: flex;
+    flex-direction: row;
+}
+
+ .box:hover{
+    background-color: lightgray;
+ }
+
+
+#information .right .box img{
+    padding:16px;
+    width: 35%;
+    height: auto;
+}
+
+
+#information .right .text{
+    text-align: left;
+    margin: auto 0px;
+    width: 65%;
+}
+
+
+
+
+
+
+#start_learning{
+    background-color: lightgray;
+    text-align: center;
+}
+
+
+#boxes{
+    margin: 0px 72px 32px 72px;
+}
+
+#top, #bottom{
+    display: flex;
+    flex-direction: row;
+}
+
+#boxes .box{
+    text-align: left;
+    width: 33%;
+    margin: 24px 16px;
+    background-color: white;
+}
+
+#start_learning .box img{
+    width: 100%;
+    height: auto;
+}
+#start_learning .box div{
+    padding: 16px;
+}
+#start_learning .box h5{
+}
+#start_learning .box h6{
+    margin: 8px 0px;
+}
+#start_learning .box p{
+}
+
+
+
+
+
+#thesis_exhibit{
+    text-align: center;
+}
+
+#thesis{
+    margin: 32px 24px;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+
+}
+
+
+#thesis .left{
+    width: 60%;
+}
+
+#thesis .left video{
+    padding-bottom: 24px;
+    width: 100%;
+}
+
+#thesis .left .text{
+    text-align: left;
+}
+
+
+#thesis .right{
+    margin-left: 24px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+#thesis .right .box{
+    display: flex;
+    flex-direction: row;
+}
+#thesis .right .box:hover{
+    background-color: lightgray;
+}
+
+#thesis .right .box img{
+    padding: 16px;
+    width: 35%;
+    height: auto;
+}
+
+#thesis .right .box .text{
+    margin: auto 0px;
+    text-align: left;
+}
