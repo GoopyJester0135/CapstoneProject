@@ -20,38 +20,40 @@ html {
     padding: 8px;
 }
 
-#greybox{
+#greybox {
     display: flex;
     flex-direction: row;
     background-color: lightgray;
 }
 
-#greybox .left{
+#greybox .left {
     padding: 32px 24px;
     width: 60%;
 }
-#greybox .left img{
+
+#greybox .left img {
     width: 100%;
 }
 
-#greybox .right{
+#greybox .right {
     margin: auto 0px;
     color: rgb(74, 74, 74);
     width: 20%;
 }
-#greybox .right div{
+
+#greybox .right div {
     margin: auto 0px;
     text-align: left;
 }
 
-#greybox .right .button{
+#greybox .right .button {
     text-align: center;
     padding: 8px auto;
     background-color: rgb(74, 74, 74);
     color: lightgray;
 }
 
-#greybox .right .button:hover{
+#greybox .right .button:hover {
     background-color: grey;
 }
 
@@ -70,10 +72,11 @@ html {
     width: 60%;
 }
 
-#information .left img{
+#information .left img {
     width: 100%;
 }
-#informatin .left div{
+
+#informatin .left div {
     padding: 32px 0px;
 }
 
@@ -82,24 +85,24 @@ html {
     width: 40%;
 }
 
-#information .right .box{
+#information .right .box {
     display: flex;
     flex-direction: row;
 }
 
- .box:hover{
+.box:hover {
     background-color: lightgray;
- }
+}
 
 
-#information .right .box img{
-    padding:16px;
+#information .right .box img {
+    padding: 16px;
     width: 35%;
     height: auto;
 }
 
 
-#information .right .text{
+#information .right .text {
     text-align: left;
     margin: auto 0px;
     width: 65%;
@@ -110,52 +113,53 @@ html {
 
 
 
-#start_learning{
+#start_learning {
     background-color: lightgray;
     text-align: center;
 }
 
 
-#boxes{
+#boxes {
     margin: 0px 72px 32px 72px;
 }
 
-#top, #bottom{
+#top,
+#bottom {
     display: flex;
     flex-direction: row;
 }
 
-#boxes .box{
+#boxes .box {
     text-align: left;
     width: 33%;
     margin: 24px 16px;
     background-color: white;
 }
 
-#start_learning .box img{
+#start_learning .box img {
     width: 100%;
     height: auto;
 }
-#start_learning .box div{
+
+#start_learning .box div {
     padding: 16px;
 }
-#start_learning .box h5{
-}
-#start_learning .box h6{
+
+
+#start_learning .box h6 {
     margin: 8px 0px;
 }
-#start_learning .box p{
-}
 
 
 
 
 
-#thesis_exhibit{
+
+#thesis_exhibit {
     text-align: center;
 }
 
-#thesis{
+#thesis {
     margin: 32px 24px;
     display: flex;
     flex-direction: row;
@@ -164,42 +168,167 @@ html {
 }
 
 
-#thesis .left{
+#thesis .left {
     width: 60%;
 }
 
-#thesis .left video{
+#thesis .left video {
     padding-bottom: 24px;
     width: 100%;
 }
 
-#thesis .left .text{
+#thesis .left .text {
     text-align: left;
 }
 
 
-#thesis .right{
+#thesis .right {
     margin-left: 24px;
     width: 40%;
     display: flex;
     flex-direction: column;
 }
 
-#thesis .right .box{
+#thesis .right .box {
     display: flex;
     flex-direction: row;
 }
-#thesis .right .box:hover{
+
+#thesis .right .box:hover {
     background-color: lightgray;
 }
 
-#thesis .right .box img{
+#thesis .right .box img {
     padding: 16px;
     width: 35%;
     height: auto;
 }
 
-#thesis .right .box .text{
+#thesis .right .box .text {
     margin: auto 0px;
     text-align: left;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    #greybox{
+        flex-direction: column;
+    }
+    #greybox .left {
+        width: auto;
+    }
+      
+    #greybox .right {
+        margin: 32px auto;
+        width: auto;
+
+    }
+    
+    #greybox .right div {
+        text-align: center;
+    }
+
+
+    #information {
+        flex-direction: column;
+    }
+
+    #information .left {
+        display: none;
+    }
+
+    #information .right {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #information .right .box {
+        flex-direction: column;
+        width: auto;
+
+    }
+
+    #information .right .box img {
+        width: 100%;
+    }
+
+
+    #information .right .text {
+        width: auto;
+
+    }
+
+
+
+
+
+
+    #start_learning {
+        background-color: white;
+    }
+
+
+    #boxes {
+        margin: 16px 8px 32px 8px;
+    }
+
+    #top,
+    #bottom {
+        flex-direction: column;
+    }
+
+    #boxes .box {
+        width: auto;
+        margin: 8px 0px;
+        background-color: lightgray;
+    }
+
+    #boxes .box:hover{
+        background-color: grey;
+    }
+
+    #start_learning .box img {
+        display: none;
+    }
+
+    #start_learning .box div {
+        color: rgb(74, 74, 74);
+    }
+
+
+    #start_learning .box h6 {
+       display: none;
+    }
+
+    #start_learning .box p {
+        display: none;
+    }
+
+
+
+
+
+    #thesis{
+        margin: 32px 0px;
+    }
+
+    #thesis .left {
+        width: auto;
+    }
+
+    #thesis .left video {
+        padding-bottom: 24px;
+        width: 100%;
+    }
+
+    #thesis .left .text {
+        display: none;
+    }
+
+    #thesis .right {
+        display: none;
+    }
+
 }
