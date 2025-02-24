@@ -12,6 +12,12 @@ html {
 
 }
 
+@media only screen and (min-width: 900px) {
+    #banner_mobile {
+        display: none;
+    }
+}
+
 .navagation a {
     padding: 8px;
 }
@@ -208,21 +214,52 @@ html {
 
 
 @media only screen and (max-width: 900px) {
-    #greybox{
+
+    #banner {
+        display: none;
+    }
+
+    #banner_mobile {
+        display: flex;
+        justify-content: space-around;
+        height: 64px;
+    }
+
+    #banner_mobile img {
+        scale: auto
+    }
+
+    #banner .navagation a {
+        display: none;
+    }
+
+
+    #greybox {
         flex-direction: column;
     }
+
     #greybox .left {
         width: auto;
+        padding: 0px 0px;
     }
-      
+
+    #greybox .left img {
+        width: 100%;
+    }
+
+
     #greybox .right {
         margin: 32px auto;
         width: auto;
 
     }
-    
+
     #greybox .right div {
         text-align: center;
+    }
+
+    #greybox .right .button {
+        margin: 0px 25%;
     }
 
 
@@ -235,27 +272,34 @@ html {
     }
 
     #information .right {
+        margin: 16px;
         width: auto;
+    }
+    
+    #information .right .box {
         display: flex;
         flex-direction: column;
+        margin: 16px 0px;
     }
-
-    #information .right .box {
-        flex-direction: column;
-        width: auto;
-
+    
+    .box:hover {
+        background-color: lightgray;
     }
-
+    
+    
     #information .right .box img {
-        width: 100%;
-    }
-
-
-    #information .right .text {
+        padding: 0px;
         width: auto;
-
+        height: auto;
     }
-
+    
+    
+    #information .right .text {
+        text-align: left;
+        margin: auto 0px;
+        width: auto;
+    }
+    
 
 
 
@@ -281,7 +325,7 @@ html {
         background-color: lightgray;
     }
 
-    #boxes .box:hover{
+    #boxes .box:hover {
         background-color: grey;
     }
 
@@ -295,7 +339,7 @@ html {
 
 
     #start_learning .box h6 {
-       display: none;
+        display: none;
     }
 
     #start_learning .box p {
@@ -306,7 +350,7 @@ html {
 
 
 
-    #thesis{
+    #thesis {
         margin: 32px 0px;
     }
 
